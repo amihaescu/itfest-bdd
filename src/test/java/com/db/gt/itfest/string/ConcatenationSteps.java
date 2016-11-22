@@ -35,8 +35,8 @@ public class ConcatenationSteps {
     }
 
     @Then("I expect the result should be (.*)")
-    public void getStringResult() {
-        assertTrue(stringConcatenation.getConcatenatedString().equals(result));
+    public void getStringResult(String findable) {
+        assertTrue(findable.equals(result));
     }
 
 }
